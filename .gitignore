@@ -1,0 +1,29 @@
+# Ignore Python virtual environment folder
+fastapienv/
+
+# Ignore all .pyc files
+*.pyc
+
+# Ignore __pycache__ folders
+__pycache__/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore database files (if any)
+*.db
+
+# Ignore IDE-specific files (if using VSCode)
+.vscode/
+
+# Ignore compiled files
+*.pyo
+*.pyd
+*.pdb
+
+# Ignore system files (macOS and Windows)
+.DS_Store
+Thumbs.db
