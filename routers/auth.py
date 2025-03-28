@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 from datetime import timedelta, datetime, timezone
 from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, Request
@@ -17,9 +19,9 @@ router = APIRouter(
     tags=['Authentication']
 )
 
-
-SECRET_KEY = '625558a744477869857bc3c0d2e637bf5fb4766250bb9d27b645877815322c30'
-ALGORITHM = 'HS256'
+load_dotenv()
+SECRET_KEY = os.getenv("SECRET_KEY") 
+ALGORITHM = os.getenv("ALGORITHM") 
 
 
 db_dependency = Annotated[Session, Depends(get_db)]

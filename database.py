@@ -1,8 +1,10 @@
+import os
 from urllib.parse import quote_plus
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
+from dotenv import load_dotenv
 
-
+load_dotenv()
 """ 
 #SQLite database connection
 SQLALCHEMY_DATABASE_URL = "sqlite:///./todosapp.db"
@@ -17,7 +19,11 @@ engine = create_engine(SQLALCHEMY_DATABASE_URL)
 """
 
 #Postgresql database connection
-SQLALCHEMY_DATABASE_URL = "postgresql://admin:Nq6TkK5G052I5LWtKxTbFqlEdGlxbpP6@dpg-cviukjjuibrs738um6a0-a/todo_db_743k"
+SQLALCHEMY_DATABASE_URL = os.getenv("POSTGRESQL_DATABASE_URL")
+
+if not SQLALCHEMY_DATABASE_URL:
+    raise ValueError("No POSTGRESQL_DATABASE_URL found in environment variables. Please add it to your .env file.")
+
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 #Postgresql database connection
 
