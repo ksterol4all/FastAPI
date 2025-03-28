@@ -80,7 +80,7 @@ Update your `database.py` file to read from this `.env` file.
 ---
 
 ## Database Migration
-If you are using a PostgreSQL database hosted on Render.com, ensure your connection URL is correctly set in your `.env` file. You can test your connection using `pgAdmin` as explained above.
+You can use the sqlite by uncomment the connection and commenting the postgres but if you are using a PostgreSQL database, then pass in your credentials or you can use PostgreSQL database hosted on Render.com, ensure your connection URL is correctly set in your `.env` file. You can test your connection using `pgAdmin` as explained above.
 
 ---
 
