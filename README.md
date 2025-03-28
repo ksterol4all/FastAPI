@@ -2,10 +2,6 @@
 
 This is a simple Todo application built using FastAPI, SQLAlchemy, Jinja2 templates, and PostgreSQL. The application supports user authentication, CRUD operations on todos, and integration with Render.com as a PostgreSQL database host.
 
-## Live Deployment for testing
-https://todo-deployment-n7fr.onrender.com/
-
----
 
 ## Features
 - User Registration and Login (JWT Authentication)
@@ -130,6 +126,7 @@ Feel free to open issues or submit pull requests if you would like to contribute
 
 ---
 
-## License
-This project is licensed under the MIT License.
+## Live Deployment for testing
+https://todo-deployment-n7fr.onrender.com/
+
 
