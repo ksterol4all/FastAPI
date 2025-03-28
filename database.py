@@ -17,7 +17,7 @@ engine = create_engine(SQLALCHEMY_DATABASE_URL)
 """
 
 #Postgresql database connection
-SQLALCHEMY_DATABASE_URL = "postgresql://admin:Nq6TkK5G052I5LWtKxTbFqlEdGlxbpP6@dpg-cviukjjuibrs738um6a0-a.ohio-postgres.render.com/todo_db_743k"
+SQLALCHEMY_DATABASE_URL = "postgresql://admin:Nq6TkK5G052I5LWtKxTbFqlEdGlxbpP6@dpg-cviukjjuibrs738um6a0-a/todo_db_743k"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 #Postgresql database connection
 
