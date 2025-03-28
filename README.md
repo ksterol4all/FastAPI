@@ -5,6 +5,8 @@ This is a simple Todo application built using FastAPI, SQLAlchemy, Jinja2 templa
 ## Live Deployment for testing
 https://todo-deployment-n7fr.onrender.com/
 
+---
+
 ## Features
 - User Registration and Login (JWT Authentication)
 - Create, Read, Update, Delete (CRUD) operations for Todos
